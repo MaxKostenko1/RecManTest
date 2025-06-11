@@ -64,8 +64,5 @@ src/
 
 ## 🌐 Demo
 
-A live demo will be deployed shortly.
+Can be acceses by this link
 
----
-
-Copyright © 2025 RecMan
