@@ -1,0 +1,65 @@
+.iconButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.iconButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.small {
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.medium {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+/* Variants */
+.save {
+  color: #4caf50;
+}
+
+.save:hover:not(:disabled) {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.cancel {
+  color: #f44336;
+}
+
+.cancel:hover:not(:disabled) {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.delete {
+  color: #666;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.delete:hover:not(:disabled) {
+  background-color: #ff4444;
+  color: white;
+}
+
+.neutral {
+  color: #333;
+}
+
+.neutral:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.1);
+}

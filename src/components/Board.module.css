@@ -1,0 +1,105 @@
+.boardWrapper {
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.columnsContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.addColumnButton {
+  min-width: 120px;
+  padding: 8px 12px;
+  border: none;
+  color: black;
+  background: #e2e2e2;
+  border-radius: 6px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.addColumnButton:hover {
+  background-color: #e0e0e0;
+}
+
+.bulkActions {
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  border-radius: 0.5rem;
+  color: black;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.bulkActions select {
+  margin-left: auto;
+}
+
+.bulkActions button {
+  color: black;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.bulkActions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controls {
+  padding: 0.5rem;
+  display: flex;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.controls input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filters button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #e0e0e0;
+}
+
+.activeFilter {
+  border-color: #007bff !important;
+  background-color: #cce5ff !important;
+}

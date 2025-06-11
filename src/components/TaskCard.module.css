@@ -1,0 +1,156 @@
+.card {
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.taskCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  max-height: 100px;
+  overflow: hidden;
+  gap: 8px;
+}
+
+.taskTitle {
+  flex: 1;
+  min-width: 0;
+  max-height: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 1.4;
+  word-wrap: break-word;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.taskTitle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.taskCheckbox {
+  flex-shrink: 0;
+}
+
+.selectCheckbox {
+  flex-shrink: 0;
+}
+
+.editContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.editInputContainer {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.editInput {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background-color: white;
+}
+
+.editInput:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.editButtons {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.saveBtn,
+.cancelBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.saveBtn {
+  color: #4caf50;
+}
+
+.saveBtn:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.cancelBtn {
+  color: #f44336;
+}
+
+.cancelBtn:hover {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.deleteBtn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 6px;
+  cursor: pointer;
+  color: #666;
+  font-size: 12px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #ff4444;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card.draggedOver {
+  border: 2px solid #0052cc;
+  background-color: #f0f8ff;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}

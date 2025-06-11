@@ -1,0 +1,158 @@
+.column {
+  background: #f4f4f4;
+  color: black;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s ease;
+}
+
+.column.draggedOver {
+  background-color: #e3f2fd;
+  border: 2px solid #2196f3;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  transform: scale(1.02);
+}
+
+.header {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: grab;
+}
+
+.header:active {
+  cursor: grabbing;
+}
+
+.columnTitle {
+  cursor: pointer;
+  margin: 0;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.columnTitle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.titleEditContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.titleEditInput {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+.titleEditInput:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.titleEditButtons {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.saveBtn,
+.cancelBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.saveBtn {
+  color: #4caf50;
+}
+
+.saveBtn:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.cancelBtn {
+  color: #f44336;
+}
+
+.cancelBtn:hover {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.deleteBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #333;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.deleteBtn:hover {
+  color: #000;
+}
+
+.actionBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.actionBar > button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.actionBar > button:hover {
+  background-color: #f0f0f0;
+}
+
+.actionBar > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.addInput {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
