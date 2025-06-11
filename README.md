@@ -64,5 +64,6 @@ src/
 
 ## 🌐 Demo
 
-Can be acceses by this link
+Can be acceses by this [link](https://courageous-stardust-545090.netlify.app/)
+
 
